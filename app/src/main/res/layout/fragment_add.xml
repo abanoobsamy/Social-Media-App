@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".view.fragment.AddFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageButton
+            android:id="@+id/iv_backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:elevation="2dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_back" />
+
+        <ImageButton
+            android:id="@+id/iv_nextBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_next"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_addPostDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Add Something About This Post"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:minLines="12"
+        android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_addPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAddPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

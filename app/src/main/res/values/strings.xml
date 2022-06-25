@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Social Media App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_client_id">194837241110-07qcp5iehjkfaelejr7v0epgnmcptlei.apps.googleusercontent.com</string>
+    <string name="social_media_app">Social Media App</string>
+
+    <string name="return_to_fragment">return_to_fragment</string>
+    <string name="view_chat_activity">view_chat_activity</string>
+</resources>
